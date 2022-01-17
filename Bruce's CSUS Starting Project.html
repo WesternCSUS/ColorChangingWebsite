@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--Made by Bruce Liu 2022-->
+<html>
+<head>
+<style>
+#changebutton {
+    color: blue;
+}
+</style>
+</head>
+
+<body>
+<a href="javascript:void(0)" id="changebutton"> Click here to change text colour.</a>
+
+<script>
+
+    document.getElementById('changebutton').onclick = changeColor;   
+
+    function changeColor() {
+        document.getElementById('changebutton').style.color = '#'+Math.floor(Math.random()*16777215).toString(16);
+        return false;
+    }
+
+</script>
+</body>
+</html>
